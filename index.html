@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <div class="lang-bar">
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="uz">O‘zbek</option>
+        <option value="tr">Türkçe</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+    <div class="container">
+      <div class="content">
+        <img src="./images/ins.png" alt="instagram" />
+        <form action="#" class="loginForm" id="loginForm">
+          <div class="inputs">
+            <label for="">
+              <input
+                type="text"
+                placeholder="Phone number, username, or email"
+                id="username"
+              />
+            </label>
+            <label for="">
+              <input type="password" placeholder="Password" id="password" />
+            </label>
+          </div>
+          <button type="submit">Log In</button>
+        </form>
+        <div class="seperator">
+          <span></span>
+          <span>OR</span>
+          <span></span>
+        </div>
+        <div class="forgot_buttons">
+          <button>
+            <img src="./images/fac.png" alt="fackebook" />
+            <span
+              ><a
+                href="https://www.facebook.com/login.php/?rcs=ATCO5DX0yViKkQzvnfTqkfSDkUrFVwTqwBRwAFPwgkx4KJpYsojtCyuDf7cfIQ2w0XiJRRsi3gvQDzMdTb63Cul4Xe3vm2zGLiWH9JzuqDmVnhHem31QzVWMpSJ-dz9ljvjd3rX5sfaliVRj_G3FiYL1RoMj2AxIY3eJIsEHTHwu4KPFkbN5h0SBci0eeqq_FK5YqINO6w6mZ4crQOgjzBhn-E3hmGJvZHnJAKlDyCI_7LcfYjHqUwFn"
+                >Log in with facebook</a
+              ></span
+            >
+          </button>
+          <button>Forgot password ?</button>
+        </div>
+      </div>
+    </div>
+    <div class="sign_up">
+      <p>Don't have a account ?<a href="#">Sign Up</a></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
