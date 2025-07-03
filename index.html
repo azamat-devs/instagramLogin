@@ -12,54 +12,64 @@
     <title>Instagram</title>
   </head>
   <body>
-    <div class="lang-bar">
-      <select id="langSelect">
-        <option value="en">English</option>
-        <option value="ru">Русский</option>
-        <option value="uz">O‘zbek</option>
-        <option value="tr">Türkçe</option>
-        <option value="es">Español</option>
-      </select>
-    </div>
     <div class="container">
-      <div class="content">
-        <img src="./images/ins.png" alt="instagram" />
-        <form action="#" class="loginForm" id="loginForm">
-          <div class="inputs">
-            <label for="">
-              <input
-                type="text"
-                placeholder="Phone number, username, or email"
-                id="username"
-              />
-            </label>
-            <label for="">
-              <input type="password" placeholder="Password" id="password" />
-            </label>
-          </div>
-          <button type="submit">Log In</button>
-        </form>
-        <div class="seperator">
-          <span></span>
-          <span>OR</span>
-          <span></span>
-        </div>
-        <div class="forgot_buttons">
-          <button>
-            <img src="./images/fac.png" alt="fackebook" />
-            <span
-              ><a
-                href="https://www.facebook.com/login.php/?rcs=ATCO5DX0yViKkQzvnfTqkfSDkUrFVwTqwBRwAFPwgkx4KJpYsojtCyuDf7cfIQ2w0XiJRRsi3gvQDzMdTb63Cul4Xe3vm2zGLiWH9JzuqDmVnhHem31QzVWMpSJ-dz9ljvjd3rX5sfaliVRj_G3FiYL1RoMj2AxIY3eJIsEHTHwu4KPFkbN5h0SBci0eeqq_FK5YqINO6w6mZ4crQOgjzBhn-E3hmGJvZHnJAKlDyCI_7LcfYjHqUwFn"
-                >Log in with facebook</a
-              ></span
+      <!-- <div class="phone">
+        <img src="images/68d99ba29cc8.png" alt="Instagram screenshot">
+      </div> -->
+      <div class="login-form">
+        <div class="form-box">
+          <img src="./images/ins.png" alt="Instagram logo" class="logo" />
+          <form autocomplete="off">
+            <label for="login-user" class="visually-hidden"
+              >Username or Email</label
             >
-          </button>
-          <button>Forgot password ?</button>
+            <input
+              id="login-user"
+              type="text"
+              placeholder="Phone number, username, or email"
+              required
+            />
+            <label for="login-pass" class="visually-hidden">Password</label>
+            <input
+              id="login-pass"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Log In</button>
+            <div class="divider">
+              <div class="line"></div>
+              <div class="or">OR</div>
+              <div class="line"></div>
+            </div>
+            <a href="#" class="facebook-login">
+              <img src="./images/fac.png" alt="Facebook logo" /> Log in with
+              Facebook
+            </a>
+            <a href="#" class="forgot">Forgot password?</a>
+          </form>
+        </div>
+        <div class="signup-box">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <div class="get-app">
+          <p>Get the app.</p>
+          <div class="app-links">
+            <a href="#" class="app-badge" title="App Store">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg"
+                alt="App Store"
+              />
+            </a>
+            <a href="#" class="app-badge" title="Google Play">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+              />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="sign_up">
-      <p>Don't have a account ?<a href="#">Sign Up</a></p>
     </div>
     <script src="index.js"></script>
   </body>
